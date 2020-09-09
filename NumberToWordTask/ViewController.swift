@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     //MARK:- Additional Functions
@@ -77,10 +77,12 @@ class ViewController: UIViewController {
     //MARK:- IBActions
     @IBAction func actionSubmit(_ sender: Any) {
         if txtFldInput.text!.isEmpty{
+            lblOutPut.text = ""
             toastMessage(" Please enter number ")
-        }
+        } else {
         lblOutPut.text =  numToWord(number: Int(txtFldInput.text!) ?? 0)
     }
     
 }
 
+}
