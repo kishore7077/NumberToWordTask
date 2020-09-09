@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         return ""
     }
     
+    //MARK:- Toast Message
     func toastMessage(_ message: String){
         guard let window = UIApplication.shared.keyWindow else {return}
         let messageLbl = UILabel()
